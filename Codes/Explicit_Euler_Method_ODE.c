@@ -17,12 +17,9 @@ double main()
   scanf("%lf",&y1);
   printf("\n\nEnter the h: ");
   scanf("%lf",&h);
-  //printf("\n\n  y1 = %lf ",y1);
   for(x1=a,j=1; x1<=n+h; x1=x1+h,j++)
   {
    y2 = y1 + h * func(x1,y1);
-   //yi=yi-1+hf(xi,yi)
-   //printf("%lf",y1);
    printf("\n\n  x = %lf => y%d = %lf , y%d = %lf ",x1,j,y1,j+1,y2);
    y1=y2;
   }
